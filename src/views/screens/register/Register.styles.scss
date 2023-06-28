@@ -1,0 +1,89 @@
+.register-container {
+    @apply bg-cover bg-login-image h-home-height bg-center relative;
+
+    @media (max-height: 625px) {
+        @apply h-full pb-[30px];
+    }
+
+    @media (max-width: 822px) {
+        @apply h-full pb-[30px];
+    }
+
+    .bg-blue {
+        @apply h-full;
+    }
+
+    .header {
+        @apply flex justify-between items-center pt-[20px];
+
+        .logo {
+            @apply w-[206px] h-[68px];
+
+            @media (max-width: 500px) {
+                @apply w-[40%] h-[auto];
+            }
+        }
+
+        .logos-res {
+            @media (max-width: 500px) {
+                @apply w-[27px];
+            }
+        }
+    }
+
+    .title-registro {
+        @apply text-[34px] font-bold text-[#03598c] mb-8;
+    }
+
+    .form-control {
+        @apply block w-full border border-[rgb(206_212_218_/_var(--tw-border-opacity))] border-[rgb(3_89_140_/_var(--tw-border-opacity))] bg-[rgb(255_255_255_/_var(--tw-bg-opacity))] bg-none bg-clip-padding text-base leading-6 leading-normal text-[rgb(3_89_140_/_var(--tw-text-opacity))] px-3 py-1.5 rounded-[0.55rem] border-solid;
+        --tw-border-opacity: 1;
+        --tw-bg-opacity: 1;
+        --tw-text-opacity: 1;
+
+        &::placeholder {
+            color: #03598c;
+        }
+    }
+
+    .bienvenidos {
+        @apply text-[#03598c] text-[32px] font-bold;
+    }
+
+    .eres {
+        @apply text-[#0d1f47] px-0 py-3;
+
+    }
+
+    .entrar1 {
+        @apply bg-[#03598c] text-xl rounded-[20px] w-2/5 text-[white];
+    }
+
+    .autorizo {
+        @apply text-[10px] text-[#0d1f47] px-0 py-[13px];
+    }
+
+    .form-check {
+        @apply relative block mb-2;
+    }
+
+    .t-autorizo {
+        @apply text-[8px] text-[#0d1f47];
+    }
+
+    .card-content {
+        @apply flex justify-center items-center h-full;
+
+        h5 {
+            @apply text-white text-[30px];
+        }
+
+        p {
+            @apply text-[#212529] text-base;
+
+            @media (max-width: 821px) {
+                margin-top: 5px !important;
+            }
+        }
+    }
+}

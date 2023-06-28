@@ -1,0 +1,122 @@
+.home-container {
+    @apply bg-cover bg-home-image h-home-height bg-center relative;
+
+
+    @media(max-height: 625px){
+        @apply h-full pb-[30px];
+    }
+
+    @media(max-width: 767px){
+        @apply h-full pb-[30px];
+    }
+
+    .bg-blue {
+        @apply h-full;
+        background: linear-gradient(
+            180deg,
+            rgba(4, 138, 191, 0.7) 0%,
+            rgba(253, 187, 45, 0) 100%
+        );
+    }
+
+    .header {
+        @apply flex justify-between items-center pt-[20px] ml-[8%];
+
+        @media(max-width: 821px){
+            @apply ml-[2%];
+        }
+
+        .logo {
+            @media (max-width: 500px) {
+                @apply w-[40%];
+            }
+        }
+
+        .text-right {
+            @apply  right-[7%];
+        }
+
+        .logos-res {
+            @media (max-width: 500px) {
+                @apply w-[27px] left-[0%];
+            }
+        }
+    }
+
+    .content {
+        @apply mt-[20px];
+    }
+
+    .class-cartas {
+        @apply flex justify-center;
+
+        img {
+            @apply h-[auto] w-[40%];
+            
+            &:hover {
+                -webkit-box-shadow: 10px 3px 22px 4px rgba(140, 150, 132, 1);
+                -moz-box-shadow: 10px 3px 22px 4px rgba(140, 150, 132, 1);
+                box-shadow: 10px 3px 22px 4px rgba(140, 150, 132, 1);
+            }
+
+            @media(max-width: 821px){
+                @apply pt-[20px];
+            }
+
+            @media(max-width: 768px){
+                @apply w-[30%];
+            }
+
+            @media(max-width: 500px){
+                @apply w-[44%];
+            }
+
+        }
+    }
+
+    .card-content {
+        @apply flex justify-center items-center h-full;
+
+        h5 {
+            @apply text-white text-[30px];
+
+        }
+
+        p {
+            @apply text-white text-base;
+
+            @media(max-width: 821px){
+                margin-top: 5px !important;
+            }
+        }
+    }
+}
+
+
+.card-res-tam {
+    @media(max-width: 500px){
+        width: 100%!important ;
+    }
+   
+}
+
+.logotermino {
+    @media(max-width: 1023px) {
+        width: 100%;
+        max-width: 100% !important;
+
+        img {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+.boehringer-res {
+    @media(max-width: 1023px) {
+        width: 100% !important;
+
+        img {
+            margin-left: 0 !important;
+        }
+    }
+}

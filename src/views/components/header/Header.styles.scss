@@ -1,0 +1,54 @@
+.header-container {
+    .bg-blue {
+        background-color: #f3ece4;
+    }
+
+    .header {
+        @apply flex justify-between items-center pt-[20px]  pb-0.5;
+
+        .logo {
+            @media (max-width: 500px) {
+                @apply w-[40%];
+            }
+        }
+
+        .logos-res {
+            @media (max-width: 500px) {
+                @apply w-[27px];
+            }
+        }
+
+        .navbar-nav {
+            @apply flex flex-row justify-start items-center mb-0 pl-0;
+            -ms-flex-direction: column;
+            list-style: none;
+        }
+
+        .text-primary{
+            @apply text-[#03598c] font-medium;
+        }
+
+        .active {
+            @apply text-[#03598c];
+        }
+        
+        .web {
+            @apply border-b-[6px] border-b-[#d90504] border-solid;
+        }
+
+        li {
+            @apply h-[70px] flex items-center mx-[20px];
+        }
+
+    }
+
+    .mesas {
+        @apply bg-[#034aa6] h-[30px] flex justify-center;
+
+        p {
+            @apply flex items-center text-white text-[12px] capitalize;
+        }
+    }
+
+    
+}

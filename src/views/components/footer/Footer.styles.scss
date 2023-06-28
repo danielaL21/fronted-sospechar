@@ -1,0 +1,66 @@
+.footer {
+    @apply bg-[#03598c];
+
+    .legal {
+        @apply text-xs text-[white] text-justify;
+
+        @media(max-width: 821px){
+            @apply pt-[20px] ;
+        }
+
+        .legales {
+            @apply text-base text-[white];
+        }
+    }
+
+    .legal1 {
+        @apply text-xs text-[white] pb-[15px];
+    }
+
+    .legales-res1 {
+        @media(min-width: 821px){
+            @apply p-0;
+        }
+    }
+
+    .legales-res {
+        @media(max-width: 912px) and (min-width: 822px){
+            @apply p-0;
+        }
+    }
+}
+
+.brands {
+    background-color: #c5d9e5;
+
+    .logos-resp {
+        
+
+        @media (max-width: 821px){
+            div:not(.terminos-resp) {
+                @apply w-[50%] ;
+
+                img {
+                    @apply px-[10px] mb-[15px];
+                }
+            }
+        }
+    }
+
+    .terminos-resp {
+        @apply flex flex-col font-bold text-base underline text-[#03598c];
+
+        @media(max-width: 1024px){
+            @apply flex-row text-[9px] gap-2.5 flex justify-center;
+        }
+
+        @media(min-width: 768px) and (max-width: 1024px){
+            @apply flex-row  text-[15px] gap-2.5 flex justify-center;
+        }
+    }
+}
+
+.class-copy {
+    @apply bg-[#03598c] text-[white] text-sm py-[20px];
+}
+

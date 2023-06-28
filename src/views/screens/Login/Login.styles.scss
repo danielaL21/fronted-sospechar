@@ -1,0 +1,121 @@
+.login-container {
+    @apply bg-cover bg-login-image h-home-height bg-center relative;
+
+
+    @media(max-height: 625px){
+        @apply h-full pb-[30px];
+    }
+
+    @media(max-width: 822px){
+        @apply h-full pb-[30px];
+    }
+
+    .bg-blue {
+        @apply h-full;
+    }
+
+    .header {
+        @apply flex justify-between items-center pt-[20px];
+
+        .logo {
+            @apply w-[206px] h-[68px];
+
+            @media (max-width: 500px) {
+                @apply w-[40%] h-[auto];
+            }
+        }
+
+        .logos-res {
+            @media (max-width: 500px) {
+                @apply w-[27px];
+            }
+        }
+    }
+
+    .content {
+        @apply mt-[20px] pb-[30px] h-content-2-height relative;
+
+        .fila {
+            @apply w-full relative h-full flex items-end;
+
+            @media (max-width: 1024px){
+                @apply flex-col;
+
+                .card-content  {
+                    @apply w-full;
+                }
+
+                .card-res-tam {
+                    width: 100% !important;
+                }
+
+                .card-aqui {
+                    width: 100% !important;
+                }
+            }
+
+            .col-xl-7 {
+                @apply h-full items-center flex justify-end ;
+            }
+        }
+
+        .title-form1 {
+            @apply text-[34px] font-bold text-[#03598c];
+        }
+
+        .text-label {
+            @apply text-[#053055] font-bold;
+        }
+
+        .entrar {
+            @apply bg-[#03598c] text-xl rounded-[20px] w-2/5;
+        }
+
+        .ancla1 {
+            @apply text-[#03598c] font-medium;
+        }
+
+        .btn-primary {
+            @apply rounded-[20px] bg-[#0367a5] text-white;
+        }
+        
+        .class-cartas {
+            @apply flex justify-end;
+
+            @media (max-width: 1024px){
+                @apply  justify-center mt-[30px] w-[100%];
+            }
+        }
+
+        .card-res-tam {
+            @apply h-[200px];
+
+            h5 {
+                @apply text-[36px] text-[#0367a5] font-bold;
+            }
+
+            p {
+                @apply text-base text-black font-normal leading-[20px];
+            }
+        }
+    }
+
+   
+
+    .card-content {
+        @apply flex justify-center items-center h-full;
+
+        h5 {
+            @apply text-white text-[30px];
+
+        }
+
+        p {
+            @apply text-[#212529] text-base;
+
+            @media(max-width: 821px){
+                margin-top: 5px !important;
+            }
+        }
+    }
+}
